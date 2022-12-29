@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import react from '@vitejs/plugin-react'
-import RemixRouter from 'vite-plugin-remix-router'
 import createVitePlugins from './config'
 // https://vitejs.dev/config/
 
