@@ -18,5 +18,5 @@ const cssOption: CSSOptions = {
       additionalData: "@import \"./src/assets/scss/varible.scss\";"
     }
   }
-};
+}
 export default cssOption;
