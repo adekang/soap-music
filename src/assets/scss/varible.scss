@@ -1,0 +1,80 @@
+$bg: #f0f0f0;
+$borderColor: #f0f0f0;
+$theme-color: #C20C0C;
+
+$theme-color-shadow: rgba(212, 68, 57, 0.5);
+
+$font-color-light: #f1f1f1;
+$font-color-deep: #18191C;
+$font-color-desc: #2e3030;
+$font-color-desc-v2: #bba8a8; // 略淡
+
+$font-size-s: 14px;
+$font-size-m: 18px;
+$font-size-l: 24px;
+$iconfont-size-l: 24px;
+
+$border-color: #e4e4e4;
+$border-red-color: #C10D0C;
+$border-color-v2: rgba(228, 228, 228, 0.1);
+$background-color: #f2f3f4;
+$background-color-shadow: rgba(0, 0, 0, 0.3);
+$highlight-background-color: #fff;
+
+$theme-color-shadow: "rgba(212, 68, 57, .5)";
+
+@mixin flexContainer($jc) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: $jc;
+}
+
+@mixin fontStyle($size, $color, $bold: normal) {
+  font-size: $size;
+  color: $color;
+  font-weight: $bold;
+}
+
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin bgFull {
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@mixin singleEllipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@mixin fontNormal($fw) {
+  font-weight: $fw;
+  color: $font-color-deep;
+}
+
+@mixin extendClick {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+  }
+;
+}
