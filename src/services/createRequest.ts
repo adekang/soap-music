@@ -1,8 +1,4 @@
-import axios, {
-  AxiosInstance,
-  AxiosRequestConfig,
-  AxiosResponse
-} from "axios";
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
 const API_TIME_OUT = 20000;
 
@@ -21,11 +17,9 @@ function handleRequest(instance: AxiosInstance, createConfig: any) {
       instance.interceptors.request.use(...resInterceptor);
     });
   }
-  instance.interceptors.request.use((options) => {
+  instance.interceptors.request.use(options => {
     const setHeaders =
-      typeof createConfig?.setHeaders === "function"
-        ? createConfig?.setHeaders
-        : () => ({});
+      typeof createConfig?.setHeaders === "function" ? createConfig?.setHeaders : () => ({});
     const headers = setHeaders();
 
     return {
@@ -108,9 +102,9 @@ const createRequest = (createConfig: any) => {
                  data,
                  ...config
                }: {
-    url: any
-    method?: string
-    data?: any
+    url: any;
+    method?: string;
+    data?: any;
   }) => {
     if (method.toLowerCase() === "get") {
       const params = new URLSearchParams(data);

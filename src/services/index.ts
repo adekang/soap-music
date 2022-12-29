@@ -32,11 +32,7 @@ export const getHotSingerListRequest = (count: number) => {
   });
 };
 
-export const getSingerListRequest = (
-  category: string,
-  alpha: string,
-  count: number
-) => {
+export const getSingerListRequest = (category: string, alpha: string, count: number) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   // const { type, area } = !!category ? categoryMap.get(category) : {};

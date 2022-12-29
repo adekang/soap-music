@@ -294,7 +294,7 @@ function getRandomInt(min: number, max: number) {
 // 随机算法
 export function shuffle(arr: any[]) {
   const new_arr: any[] = [];
-  arr.forEach((item) => {
+  arr.forEach(item => {
     new_arr.push(item);
   });
   for (let i = 0; i < new_arr.length; i++) {
@@ -308,7 +308,7 @@ export function shuffle(arr: any[]) {
 
 // 找到当前的歌曲索引
 export const findIndex = (song: { id: any }, list: any[]) => {
-  return list.findIndex((item) => {
+  return list.findIndex(item => {
     return song.id === item.id;
   });
 };

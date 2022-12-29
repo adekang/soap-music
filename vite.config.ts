@@ -5,7 +5,7 @@ import createVitePlugins from "./config";
 import cssOption from "./config/style";
 // https://vitejs.dev/config/
 
-export default defineConfig((configEnv) => {
+export default defineConfig(configEnv => {
   console.log(`config::`, configEnv);
   const { command, mode } = configEnv;
   return {
@@ -19,4 +19,4 @@ export default defineConfig((configEnv) => {
     css: cssOption,
     plugins: [react(), createVitePlugins(command, mode)]
   };
-})
+});

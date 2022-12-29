@@ -1,4 +1,4 @@
-import viteEslint from 'vite-plugin-eslint'
+import viteEslint from "vite-plugin-eslint";
 /**
  * @description 对eslint的支持，在开发模式下，自动会开启检测
  */
@@ -8,5 +8,5 @@ export default function configEslint() {
     viteEslint({
       failOnError: false
     })
-  ]
+  ];
 }
