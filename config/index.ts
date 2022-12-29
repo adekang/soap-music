@@ -4,11 +4,11 @@
 
 import { Plugin } from "vite";
 import configEslint from "./eslint";
-import react from "@vitejs/plugin-react";
 import RemixRouter from "vite-plugin-remix-router";
+import configSvgSprites from "./svgSprite";
 
 export default function createVitePlugins(command: string, mode: string) {
-  const vitePlugins: (Plugin | Plugin[])[] = [RemixRouter()];
+  const vitePlugins: (Plugin | Plugin[])[] = [RemixRouter(), configSvgSprites(), configEslint()];
 
   return vitePlugins;
 }
