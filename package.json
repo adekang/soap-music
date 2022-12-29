@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
+    "format": "prettier ./src --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -20,6 +21,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"
+  },
+  "peerDependencies": {
+    "postcss": "^8.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
@@ -36,6 +40,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "postcss-preset-env": "^7.8.3",
