@@ -1,7 +1,7 @@
 import React, { memo, useMemo } from "react";
 
 export type svgProps = {
-  iconClass: string;
+  iconName: string;
   fill?: string;
   fontSize?: string;
   className?: string;
@@ -10,23 +10,23 @@ export type svgProps = {
 };
 
 const SvgIcon: React.FC<Partial<svgProps>> = ({
-                                                iconClass,
+                                                iconName,
                                                 fill,
                                                 fontSize = "13px",
                                                 className,
                                                 onClick,
                                                 style
                                               }) => {
-  const iconName = useMemo(() => `#icon-${iconClass}`, [iconClass]);
+  const name = useMemo(() => `#icon-${iconName}`, [iconName]);
   return (
     <svg
-      fontSize={fontSize!}
+      fontSize={fontSize}
       style={{ ...svgStyle, fontSize, ...style }}
       aria-hidden="true"
-      className={className!}
+      className={className}
       onClick={onClick}
     >
-      <use xlinkHref={iconName} fill={fill!} />
+      <use xlinkHref={name} fill={fill} />
     </svg>
   );
 };

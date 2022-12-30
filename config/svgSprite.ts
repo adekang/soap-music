@@ -1,4 +1,3 @@
-import svgSprites from "rollup-plugin-svg-sprites";
 import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 import * as path from "path";
 

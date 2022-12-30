@@ -1,29 +1,14 @@
 import React, { FC } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-import SvgIcon from "@/components/SvgIcon";
+import { Outlet } from "react-router-dom";
+import "./index.scss";
+import TopBar from "@/components/TopBar";
 
 const LayOut: FC = () => {
-  const navigate = useNavigate();
 
-  const goTo = (to: string) => {
-    navigate(to);
-  };
   return (
-    <div className="LayOut">
-      <ul>
-        <li onClick={() => goTo("home")}>about</li>
-        <li onClick={() => goTo("about")}>home</li>
-      </ul>
-
+    <div className="LayOutWrapper">
+      <TopBar />
       <Outlet />
-
-      <div>
-        <SvgIcon
-          iconClass={"pose"}
-          fontSize="18px"
-          className="formatSvg player"
-        />
-      </div>
     </div>
   );
 };

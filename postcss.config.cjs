@@ -7,9 +7,9 @@ module.exports = {
       },
       stage: 3
     }),
-    require("postcss-px-to-viewport")({
+    require("postcss-px-to-viewport-8-plugin")({
       unitToConvert: "px", // 要转化的单位
-      viewportWidth: 375, // UI设计稿的宽度
+      viewportWidth: 1200, // UI设计稿的宽度
       unitPrecision: 3, // 转换后的精度，即小数点位数
       // propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
       propList: ["*"], // 指定转换的css属性的单位，*代表全部css属性的单位都进行转换
