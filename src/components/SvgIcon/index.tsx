@@ -18,6 +18,16 @@ const SvgIcon: React.FC<Partial<svgProps>> = ({
                                                 style
                                               }) => {
   const name = useMemo(() => `#icon-${iconName}`, [iconName]);
+
+  const svgStyle = {
+    width: "1em",
+    height: "1em",
+    verticalAlign: "-0.15em",
+    overflow: "hidden",
+    fill: "currentColor", // 颜色值
+    fontSize: "1.1em"
+  };
+
   return (
     <svg
       fontSize={fontSize}
@@ -29,15 +39,6 @@ const SvgIcon: React.FC<Partial<svgProps>> = ({
       <use xlinkHref={name} fill={fill} />
     </svg>
   );
-};
-
-const svgStyle = {
-  width: "1em",
-  height: "1em",
-  verticalAlign: "-0.15em",
-  overflow: "hidden",
-  fill: "currentColor", // 颜色值
-  fontSize: "1.1em"
 };
 
 SvgIcon.displayName = "SvgIcon";
