@@ -1,11 +1,12 @@
-import React, { PureComponent } from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function NotFound() {
-  return (
-    <div>
-      <h1>404</h1>
-    </div>
-  );
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/");
+  }, []);
+  return <div></div>;
 }
 
 export default NotFound;
