@@ -17,6 +17,9 @@ export default defineConfig(configEnv => {
       extensions: [".js", ".json", ".ts", ".vue", ".tsx"] // 使用路径别名时想要省略的后缀名，可以自己 增减
     },
     css: cssOption,
-    plugins: [react(), createVitePlugins(command, mode)]
+    plugins: [react(), createVitePlugins(command, mode)],
+    server: {
+      port: 3000
+    }
   };
 });
