@@ -15,10 +15,10 @@ const TopBar = () => {
     <div className="top-bar">
       <div className="navigation-buttons">
         <button>
-          <SvgIcon iconName="arrow-left-bold" fontSize="18px" />
+          <SvgIcon className="svg-icon" iconName="arrow-left-bold" />
         </button>
         <button>
-          <SvgIcon iconName="arrow-right-bold" fontSize="18px" />
+          <SvgIcon className="svg-icon" iconName="arrow-right-bold" />
         </button>
       </div>
       <ul className="center-part">

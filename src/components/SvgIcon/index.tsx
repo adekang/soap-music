@@ -12,7 +12,7 @@ export type svgProps = {
 const SvgIcon: React.FC<Partial<svgProps>> = ({
                                                 iconName,
                                                 fill,
-                                                fontSize = "13px",
+                                                fontSize,
                                                 className,
                                                 onClick,
                                                 style
