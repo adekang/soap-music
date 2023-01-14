@@ -9,10 +9,10 @@
   padding-left: 10vw;
   padding-right: 10vw;
   height: 64px;
+  background-color: #fff;
   @include fontStyle($font-size-m, $font-color-deep, 700);
 
   .navigation-buttons {
-
     > button {
       border: none;
       width: 32px;
@@ -80,7 +80,6 @@
         border: none;
         background-color: transparent;
         color: $border-color-desc;
-
 
         &:focus {
           color: $theme-color;

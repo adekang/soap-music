@@ -1,0 +1,45 @@
+.index {
+  > .title {
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > h1 {
+      @include fontStyle(24px, $font-color-deep, 700);
+    }
+  }
+  .box-container {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 20px;
+  }
+
+  .box-item {
+    .cover {
+      > img {
+        border-radius: 0.75em;
+        width: 100%;
+        user-select: none;
+        aspect-ratio: 1 / 1;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+      }
+    }
+
+    .text {
+      .title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        @include ellipsis(2);
+      }
+      .info {
+        font-size: 12px;
+        opacity: 0.65;
+        line-height: 18px;
+        @include ellipsis(1);
+      }
+    }
+  }
+}
