@@ -1,7 +1,6 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import "./index.scss";
-import SvgIcon from "@/components/SvgIcon";
-import Transition from "@/components/Transition";
+import Cover from "@/components/Cover";
 
 const res: {
   id: number;
@@ -52,16 +51,7 @@ const res: {
 }];
 
 const BoxList: FC = () => {
-    const [show, setShow] = useState(true);
-    const [showId, setShowId] = useState(0);
 
-    const showShade = (mes: boolean) => {
-      setShow(mes);
-    };
-
-    const shadowStyles = (picUrl: string) => {
-      return { backgroundImage: `url(${picUrl}?param=512y512)` };
-    };
 
     return (
       <div className="box-container">
@@ -69,31 +59,7 @@ const BoxList: FC = () => {
           res.map((item) => {
               return (
                 <div className="box-item" key={item.id}>
-                  <div className="cover"
-                       onMouseLeave={() => {
-                         showShade(false);
-                       }}
-                       onMouseEnter={() => {
-                         showShade(true);
-                         setShowId(item.id);
-                       }}>
-                    <div className="cover-container">
-                      {(show && showId === item.id) ? (<div className="shade">
-                        <button className="play-button">
-                          <SvgIcon iconName="bofang" className="svg-play" />
-                        </button>
-                      </div>) : null}
-                      <img
-                        src={`${item.picUrl}?param=512y512`}
-                        loading="lazy"
-                        alt="" />
-
-                      <Transition visible={showId === item.id && show} className="shadow fade"
-                                  style={showId === item.id && show ? shadowStyles(item.picUrl) : null}>
-                        <div></div>
-                      </Transition>
-                    </div>
-                  </div>
+                  <Cover id={item.id} picUrl={item.picUrl} />
                   <div className="text">
                     <div className="title">
                       {item.name}
