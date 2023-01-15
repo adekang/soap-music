@@ -8,18 +8,11 @@
   .box-item {
     .cover {
       position: relative;
+      transition: transform 0.3s;
     }
 
     .cover-container {
       position: relative;
-
-      > img {
-        border-radius: 0.75em;
-        width: 100%;
-        user-select: none;
-        aspect-ratio: 1 / 1;
-        border: 1px solid rgba(0, 0, 0, 0.04);
-      }
 
       > .shade {
         position: absolute;
@@ -60,17 +53,33 @@
         }
       }
 
+      > img {
+        border-radius: 0.75em;
+        width: 100%;
+        user-select: none;
+        aspect-ratio: 1 / 1;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+      }
+
       > .shadow {
         position: absolute;
-        top: 0;
         height: 100%;
         width: 100%;
-        filter: blur(16px) opacity(0.6);
-        transform: scale(0.92, 0.96);
+        transform: scale(1.5, 1.5);
         z-index: -1;
         background-size: cover;
         border-radius: 0.75em;
         aspect-ratio: 1 / 1;
+      }
+
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.3s;
+      }
+
+      .fade-enter,
+      .fade-exit {
+        opacity: 0;
       }
     }
 
