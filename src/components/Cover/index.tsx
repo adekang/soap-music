@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import SvgIcon from "@/components/SvgIcon";
-import Transition from "@/components/Transition";
 import "./index.scss";
+import LuTransition from "@/components/Transition";
 
 interface Props {
   id: number;
@@ -40,13 +40,10 @@ const Cover: FC<Props> = ({ id, picUrl }) => {
             src={`${picUrl}?param=512y512`}
             loading="lazy"
             alt="" />
-          <Transition visible={showId === id && show} className="fade"
-          >
-            {
-              showId === id && show ? (<div className="shadow" style={shadowStyles(picUrl)}>
-              </div>) : (<div></div>)
-            }
-          </Transition>
+          <LuTransition visible={showId === id && show} className="fade">
+            <div className="shadow" style={shadowStyles(picUrl)}>
+            </div>
+          </LuTransition>
         </div>
       </div>
     );

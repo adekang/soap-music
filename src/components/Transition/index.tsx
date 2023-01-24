@@ -8,13 +8,13 @@ interface Props {
   children?: JSX.Element;
 }
 
-const Transition: FC<Props> = (props) => {
+const LuTransition: FC<Props> = (props) => {
   const { visible, children, className } = props;
   return (
-    <CSSTransition in={visible} timeout={250} classNames={className}>
+    <CSSTransition in={visible} timeout={300} classNames={className} unmountOnExit={true}>
       {children}
     </CSSTransition>
   );
 };
 
-export default Transition;
+export default LuTransition;
