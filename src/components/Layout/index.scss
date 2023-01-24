@@ -8,7 +8,7 @@
   padding: 64px 10vw 96px 10vw;
   box-sizing: border-box;
   scrollbar-width: none; // firefox
-  background-color: #fff;
+
 }
 
 .PlayerWrapper {
@@ -20,6 +20,7 @@
   padding: 24px 10vw 24px 10vw;
   box-sizing: border-box;
   scrollbar-width: none; // firefox
-  background-color: #fff;
+  backdrop-filter: saturate(180%) blur(30px);
+  background-color: $color-navbar-bg;
 }
 

@@ -1,0 +1,21 @@
+.MinPlayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > .left-part {
+    font-size: 18px;
+
+    > button {
+      background: transparent;
+    }
+  }
+
+  > .center-part {
+    font-size: 18px;
+  }
+
+  > .right-part {
+    font-size: 18px;
+  }
+}

@@ -10,8 +10,9 @@
   padding-left: 10vw;
   padding-right: 10vw;
   height: 64px;
-  background-color: #fff;
   @include fontStyle($font-size-m, $font-color-deep, 700);
+  backdrop-filter: saturate(180%) blur(30px);
+  background-color: $color-navbar-bg;
 
   .navigation-buttons {
     > button {

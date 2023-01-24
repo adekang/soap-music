@@ -1,9 +1,11 @@
 import React from "react";
+import "./index.scss";
+import MinPlayer from "@/components/MinPlayer";
 
 const Player = () => {
   return (
     <div className="Player">
-      <h1>player</h1>
+      <MinPlayer />
     </div>
   );
 };
