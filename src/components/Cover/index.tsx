@@ -6,19 +6,23 @@ import LuTransition from "@/components/Transition";
 interface Props {
   id: number;
   picUrl: string;
+  type: "cover" | "singer";
 }
 
-const Cover: FC<Props> = ({ id, picUrl }) => {
-    const [showId, setShowId] = useState(0);
-    const [show, setShow] = useState(true);
-    const showShade = (mes: boolean) => {
-      setShow(mes);
-    };
+const Cover: FC<Props> = ({ id, picUrl, type = "cover" }) => {
+  const [showId, setShowId] = useState(0);
+  const [show, setShow] = useState(true);
+  const showShade = (mes: boolean) => {
+    setShow(mes);
+  };
 
-    const shadowStyles = (picUrl: string) => {
-      return { backgroundImage: `url(${picUrl}?param=512y512)` };
-    };
 
+  const shadowStyles = (picUrl: string) => {
+    return {
+      backgroundImage: `url(${picUrl}?param=512y512)`,
+      borderRadius: `${type == "singer" ? "50%" : null}`
+    };
+  };
     return (
       <div className="cover"
            onMouseLeave={() => {
@@ -38,6 +42,9 @@ const Cover: FC<Props> = ({ id, picUrl }) => {
             </div>) : null}
           <img
             src={`${picUrl}?param=512y512`}
+            style={
+              { borderRadius: `${type == "singer" ? "50%" : null}` }
+            }
             loading="lazy"
             alt="" />
           <LuTransition visible={showId === id && show} className="fade">

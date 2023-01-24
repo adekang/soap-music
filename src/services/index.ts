@@ -7,24 +7,32 @@ export const checkMusic = (data: { id: number }) =>
     data
   });
 
-export const getHotList = (data: { limit: number }) => {
+export const getRecommendList = (data: { limit: number }) => {
   return service({
     url: "/personalized",
     data
   });
 };
+export const getHotArtists = (data: { offset: number, limit: number }) => {
+  return service({
+    url: "/top/artists",
+    data
+  });
+};
+
 
 export const getBannerRequest = () => {
   return service({
     url: "/banner"
   });
 };
-
-export const getRecommendListRequest = () => {
+export const getNewAlbumRequest = (data: { area: string, limit: number }) => {
   return service({
-    url: "/personalized"
+    url: "/album/new",
+    data
   });
 };
+
 
 export const getHotSingerListRequest = (count: number) => {
   return service({
@@ -46,7 +54,7 @@ export const getSingerListRequest = (category: string, alpha: string, count: num
 
 export const getRankListRequest = () => {
   return service({
-    url: `/toplist/detail`
+    url: `/toplist`
   });
 };
 

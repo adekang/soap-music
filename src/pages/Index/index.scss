@@ -1,12 +1,15 @@
 .index {
-  > .title {
-    height: 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  > section {
+    > .index-title {
+      padding: 28px 0 0 4px;
+      height: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    > h1 {
-      @include fontStyle(24px, $font-color-deep, 700);
+      > h1 {
+        @include fontStyle(24px, $font-color-deep, 700);
+      }
     }
   }
 }
