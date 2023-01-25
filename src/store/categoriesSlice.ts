@@ -27,6 +27,9 @@ export const categoriesSlice = createSlice({
     changePlaylists: (state, action: PayloadAction<any[]>) => {
       state.playlists = action.payload;
     }
+    , initPlaylists: (state) => {
+      state.playlists = [];
+    }
   }
 });
 
@@ -45,7 +48,7 @@ export const addDataToCategory = (data: Category) => (dispatch: any, getState: a
 
 
 // Action creators are generated for each case reducer function
-export const { changeCategories, changePlaylists } =
+export const { changeCategories, changePlaylists, initPlaylists } =
   categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

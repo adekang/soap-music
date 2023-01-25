@@ -35,25 +35,25 @@ const Cover: FC<Props> = ({ id, picUrl, type = "cover" }) => {
            showShade(true);
            setShowId(id);
          }}>
-        <div className="cover-container">
-          {(show && showId === id) ?
-            (<div className="shade">
-              <button className="play-button">
-                <SvgIcon iconName="bofang" className="svg-play" />
-              </button>
-            </div>) : null}
-          <img
-            src={`${picUrl}?param=512y512`}
-            style={
-              { borderRadius: `${type == "singer" ? "50%" : null}` }
-            }
-            loading="lazy"
-            alt="" />
-          <LuTransition nodeRef={ref} visible={showId === id && show} className="fade">
-            <div ref={ref} className="shadow" style={shadowStyles(picUrl)}>
-            </div>
-          </LuTransition>
-        </div>
+      <div className="cover-container">
+        {(show && showId === id) ?
+          (<div className="shade">
+            <button className="play-button">
+              <SvgIcon iconName="bofang" className="svg-play" />
+            </button>
+          </div>) : null}
+        <img
+          src={`${picUrl}?param=512y512`}
+          style={
+            { borderRadius: `${type == "singer" ? "50%" : null}` }
+          }
+          loading="lazy"
+          alt="" />
+        <LuTransition nodeRef={ref} visible={showId === id && show} className="fade">
+          <div ref={ref} className="shadow" style={shadowStyles(picUrl)}>
+          </div>
+        </LuTransition>
+      </div>
       </div>
     );
   }

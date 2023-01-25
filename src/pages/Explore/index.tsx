@@ -10,7 +10,6 @@ import {
   getRankListRequest,
   getRecommendList
 } from "@/services";
-import { useNavigate } from "react-router-dom";
 
 const allBigCats = ["语种", "风格", "场景", "情感", "主题"];
 
@@ -54,53 +53,67 @@ const Explore = () => {
     });
   };
 
-  const getHighQualityPlaylist = () => {
-    const before = playlists?.length !== 0 ? playlists[playlists.length - 1].trackNumberUpdateTime : 0;
-    getHighQualityList({ limit: 50, before }).then((items: any) => {
-      setHasMore(items.more);
-      const array: DataProps[] = [];
-      items.playlists.length && items.playlists.map((item: DataProps, index: number) => {
-        array.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+  const getHighQualityPlaylist = (times: 0 | 1) => {
+    if (times) {
+      const before = playlists?.length !== 0 ? playlists[playlists.length - 1].updateTime : 0;
+      console.log("before::", before);
+      getHighQualityList({ limit: 50, before }).then((items: any) => {
+        setHasMore(items.more);
+        const array: DataProps[] = [];
+        items.playlists.length && items.playlists.map((item: DataProps, index: number) => {
+          array.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+        });
+        dispatch(changePlaylists([...playlists, ...array]));
       });
-      dispatch(changePlaylists([...playlists, ...array]));
-    });
+    } else {
+      getHighQualityList({ limit: 50, before: 0 }).then((items: any) => {
+        setHasMore(items.more);
+        const array: DataProps[] = [];
+        items.playlists.length && items.playlists.map((item: DataProps, index: number) => {
+          array.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+        });
+        dispatch(changePlaylists(array));
+      });
+    }
   };
 
   const changeCategory = (data: Category) => {
     dispatch(addDataToCategory(data));
   };
 
-  const getPlaylist = (activeCategory: string) => {
-    if (activeCategory === "推荐歌单") {
-      return getRecommendPlayList();
+  const getButtonPlaylist = (activeCategory: string) => {
+    switch (activeCategory) {
+      case "推荐歌单":
+        getRecommendPlayList();
+        break;
+      case "精品歌单":
+        getHighQualityPlaylist(1);
+        break;
+      case "排行榜":
+        getRankList();
+        break;
+      default:
+        getPlayList(activeCategory);
+        break;
     }
-    if (activeCategory === "精品歌单") {
-      return getHighQualityPlaylist();
-    } else {
-      getPlayList(activeCategory);
-    }
-
   };
 
 
   useEffect(() => {
-    if (activeCategory === "精品歌单") {
-      getHighQualityPlaylist();
-    }
-    if (activeCategory === "推荐歌单") {
-      dispatch(changePlaylists([]));
-      getRecommendPlayList();
-    }
-    if (activeCategory === "排行榜") {
-      dispatch(changePlaylists([]));
-      getRankList();
-    }
-    if (activeCategory === "全部") {
-      dispatch(changePlaylists([]));
-      getPlayList(activeCategory);
-    } else {
-      dispatch(changePlaylists([]));
-      getPlayList(activeCategory);
+    switch (activeCategory) {
+      case "推荐歌单":
+        getRecommendPlayList();
+        break;
+      case "精品歌单":
+        dispatch(changePlaylists([]));
+        getHighQualityPlaylist(0);
+        break;
+      case "排行榜":
+        getRankList();
+        break;
+      default:
+        getPlayList(activeCategory);
+        break;
     }
   }, [activeCategory]);
 
@@ -153,7 +166,7 @@ const Explore = () => {
       <section className="load-more">
         {hasMore ?
           (<button className="grey"
-                   onClick={() => {getPlaylist(activeCategory);}}>加载更多...</button>) : null}
+                   onClick={() => {getButtonPlaylist(activeCategory);}}>加载更多...</button>) : null}
       </section>
     </div>
   );
