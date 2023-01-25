@@ -1,6 +1,6 @@
 .explore {
   > h1 {
-    padding: 32px 0 0 0;
+    padding: 32px 0 32px 0;
     @include fontStyle(32px, $font-color-deep, 700);
   }
 
@@ -27,6 +27,73 @@
         background-color: $color-primary-bg;
         color: $theme-color;
       }
+    }
+
+    .active {
+      background-color: $color-primary-bg;
+      color: $theme-color;
+    }
+  }
+
+  .panel {
+    margin-top: 10px;
+    background: $color-secondary-bg;
+    border-radius: 10px;
+    padding: 8px;
+    color: $font-color-desc;
+
+    .big-cat {
+      display: flex;
+      margin-bottom: 32px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+      opacity: 0.68;
+      margin-left: 24px;
+      min-width: 54px;
+      height: 26px;
+      margin-top: 8px;
+    }
+
+    .cats {
+      margin-left: 24px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .cat {
+      user-select: none;
+      margin: 4px 0 0 0;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.2s;
+      min-width: 98px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 6px 12px;
+        height: 26px;
+        border-radius: 10px;
+        opacity: 0.88;
+
+        &:hover {
+          opacity: 1;
+          background-color: $color-primary-bg;
+          color: $theme-color;
+        }
+      }
+    }
+
+    .active {
+      color: $theme-color;
     }
   }
 
