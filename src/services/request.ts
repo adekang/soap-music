@@ -4,7 +4,7 @@ const isPrd = environmentVariable() === "dev";
 
 // http://121.41.42.16:3000
 // http://www.codeman.ink/api
-export const baseUrl = "https://netease-cloud-music-api-88er.vercel.app";
+export const baseUrl = "https://music.qier222.com/api";
 
 import createRequest from "./createRequest.js";
 

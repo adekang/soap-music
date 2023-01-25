@@ -9,10 +9,12 @@ export interface Category {
 
 export interface Categories {
   enabledPlaylistCategories: Category[];
+  playlists: any;
 }
 
 const initialState: Categories = {
-  enabledPlaylistCategories: playlistCategories.slice(0, 9)
+  enabledPlaylistCategories: playlistCategories.slice(0, 9),
+  playlists: []
 };
 
 export const categoriesSlice = createSlice({
@@ -21,6 +23,9 @@ export const categoriesSlice = createSlice({
   reducers: {
     changeCategories: (state, action: PayloadAction<Category[]>) => {
       state.enabledPlaylistCategories = action.payload;
+    },
+    changePlaylists: (state, action: PayloadAction<any[]>) => {
+      state.playlists = action.payload;
     }
   }
 });
@@ -40,7 +45,7 @@ export const addDataToCategory = (data: Category) => (dispatch: any, getState: a
 
 
 // Action creators are generated for each case reducer function
-export const { changeCategories } =
+export const { changeCategories, changePlaylists } =
   categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

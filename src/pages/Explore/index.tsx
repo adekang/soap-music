@@ -1,23 +1,107 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { playlistCategories } from "@/utils";
 import { RootState, useAppDispatch, useAppSelector } from "@/store";
-import { addDataToCategory, Category } from "@/store/categoriesSlice";
+import { addDataToCategory, Category, changePlaylists } from "@/store/categoriesSlice";
+import BoxList, { DataProps } from "@/components/BoxList";
+import {
+  getHighQualityList,
+  getNormalPlayList,
+  getRankListRequest,
+  getRecommendList
+} from "@/services";
 
 const allBigCats = ["语种", "风格", "场景", "情感", "主题"];
 
 const Explore = () => {
   const dispatch = useAppDispatch();
+  const { playlists } = useAppSelector((state: RootState) => state.categories);
 
   const [showCatOption, setShowCatOption] = useState(false);
   const [activeCategory, setActiveCategory] = useState("全部");
+  const [hasMore, setHasMore] = useState(false);
   const { enabledPlaylistCategories } = useAppSelector((state: RootState) => state.categories);
+
+  const getRecommendPlayList = () => {
+    getRecommendList({ limit: 100 }).then(({ result }: { result: DataProps[] }) => {
+      dispatch(changePlaylists(result));
+    });
+  };
+  const getPlayList = (cat: string) => {
+    getNormalPlayList({
+      limit: 100,
+      cat,
+      offset: 0
+    }).then((items: { playlists: DataProps[] }) => {
+      const array: DataProps[] = [];
+      items.playlists.length && items.playlists.map((item: DataProps, index: number) => {
+        array.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+      });
+      dispatch(changePlaylists(array));
+    });
+  };
+
+  const getRankList = () => {
+    getRankListRequest().then((res: any) => {
+      const data = res.list;
+      const rank: DataProps[] = [];
+      data.map((item: any, index: number) => {
+        rank.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+      });
+      dispatch(changePlaylists(rank));
+    });
+  };
+
+  const getHighQualityPlaylist = () => {
+    const before = playlists?.length !== 0 ? playlists[playlists.length - 1].trackNumberUpdateTime : 0;
+    getHighQualityList({ limit: 50, before }).then((items: any) => {
+      setHasMore(items.more);
+      const array: DataProps[] = [];
+      items.playlists.length && items.playlists.map((item: DataProps, index: number) => {
+        array.push(Object.assign({}, item, { "picUrl": item.coverImgUrl }));
+      });
+      dispatch(changePlaylists([...playlists, ...array]));
+    });
+  };
 
   const changeCategory = (data: Category) => {
     dispatch(addDataToCategory(data));
   };
 
-  console.log(enabledPlaylistCategories);
+  const getPlaylist = (activeCategory: string) => {
+    if (activeCategory === "推荐歌单") {
+      return getRecommendPlayList();
+    }
+    if (activeCategory === "精品歌单") {
+      return getHighQualityPlaylist();
+    } else {
+      getPlayList(activeCategory);
+    }
+
+  };
+
+
+  useEffect(() => {
+    if (activeCategory === "精品歌单") {
+      getHighQualityPlaylist();
+    }
+    if (activeCategory === "推荐歌单") {
+      dispatch(changePlaylists([]));
+      getRecommendPlayList();
+    }
+    if (activeCategory === "排行榜") {
+      dispatch(changePlaylists([]));
+      getRankList();
+    }
+    if (activeCategory === "全部") {
+      dispatch(changePlaylists([]));
+      getPlayList(activeCategory);
+    } else {
+      dispatch(changePlaylists([]));
+      getPlayList(activeCategory);
+    }
+  }, [activeCategory]);
+
 
   return (
     <div className="explore">
@@ -28,7 +112,6 @@ const Explore = () => {
             return (<div key={item.name}
                          className={`button ${item.name === activeCategory ? "active" : ""}`}
                          onClick={(e: any) => {
-                           console.log(e.target.innerText);
                            setActiveCategory(e.target.innerText);
                          }}>{item.name}</div>);
           })}
@@ -46,7 +129,6 @@ const Explore = () => {
                     <div className="name">{item}</div>
                     <div className="cats">
                       {playlistCategories.filter(c => c.bigCat === item).map((category, index) => {
-                        console.log(category);
                         return (
                           <div key={category.name}
                                className={`cat ${enabledPlaylistCategories.findIndex((c: Category) => c.name === category.name) != -1 ? "active" : ""} `}
@@ -63,7 +145,14 @@ const Explore = () => {
           ) : null
         }
       </section>
-
+      <section className="explore-playlists">
+        <BoxList data={playlists} />
+      </section>
+      <section className="load-more">
+        {hasMore ?
+          (<button className="grey"
+                   onClick={() => {getPlaylist(activeCategory);}}>加载更多...</button>) : null}
+      </section>
     </div>
   );
 };

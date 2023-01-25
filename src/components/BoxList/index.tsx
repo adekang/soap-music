@@ -8,6 +8,8 @@ export interface DataProps {
   name: string;
   info?: string;
   type: "cover" | "singer";
+  coverImgUrl?: string;
+
 }
 
 export interface Props {

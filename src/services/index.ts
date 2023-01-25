@@ -13,6 +13,33 @@ export const getRecommendList = (data: { limit: number }) => {
     data
   });
 };
+
+export function getHighQualityList(data: { limit: number, before: number }) {
+  return service({
+    url: "/top/playlist/highquality",
+    data
+  });
+}
+
+/**
+ * 歌单 ( 网友精选碟 )
+ * 说明 : 调用此接口 , 可获取网友精选碟歌单
+ * - order: 可选值为 'new' 和 'hot', 分别对应最新和最热 , 默认为 'hot'
+ * - cat: tag, 比如 " 华语 "、" 古风 " 、" 欧美 "、" 流行 ", 默认为 "全部",可从歌单分类接口获取(/playlist/catlist)
+ * - limit: 取出歌单数量 , 默认为 50
+ * @param {string} params.order
+ * @param {string} params.cat
+ * @param {number=} params.limit
+ * @param {number=} params.offset
+ * @param data
+ */
+export function getNormalPlayList(data: { limit: number, cat: string, order?: string, offset: number }) {
+  return service({
+    url: "/top/playlist",
+    data
+  });
+}
+
 export const getHotArtists = (data: { offset: number, limit: number }) => {
   return service({
     url: "/top/artists",
