@@ -10,11 +10,13 @@ import {
   getRankListRequest,
   getRecommendList
 } from "@/services";
+import { useNavigate } from "react-router-dom";
 
 const allBigCats = ["语种", "风格", "场景", "情感", "主题"];
 
 const Explore = () => {
   const dispatch = useAppDispatch();
+
   const { playlists } = useAppSelector((state: RootState) => state.categories);
 
   const [showCatOption, setShowCatOption] = useState(false);
