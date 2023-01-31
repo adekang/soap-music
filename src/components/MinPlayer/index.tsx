@@ -8,18 +8,19 @@ const MinPlayer = () => {
       <div className="left-part">
 
         <button>
-          <SvgIcon iconName="like" />
+          <SvgIcon iconName="heart" />
         </button>
       </div>
       <div className="center-part">
-        <SvgIcon iconName="bofang" />
-        <SvgIcon iconName="kuaijin" />
+        <SvgIcon iconName="previous" />
+        <SvgIcon iconName="play" />
+        <SvgIcon iconName="next" />
 
       </div>
       <div className="right-part">
-        <SvgIcon iconName="gedan" />
-        <SvgIcon iconName="suijibofang" />
-        <SvgIcon iconName="xunhuanbofang" />
+        <SvgIcon iconName="list" />
+        <SvgIcon iconName="repeat" />
+        <SvgIcon iconName="shuffle" />
       </div>
     </div>
   );

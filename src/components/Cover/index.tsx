@@ -39,7 +39,7 @@ const Cover: FC<Props> = ({ id, picUrl, type = "cover" }) => {
         {(show && showId === id) ?
           (<div className="shade">
             <button className="play-button">
-              <SvgIcon iconName="bofang" className="icon" />
+              <SvgIcon iconName="play" className="icon" />
             </button>
           </div>) : null}
         <img

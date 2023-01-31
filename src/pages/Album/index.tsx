@@ -6,6 +6,7 @@ import Cover from "@/components/Cover";
 import { formatTime } from "@/utils/time";
 import Button from "@/components/Button";
 import SvgIcon from "@/components/SvgIcon";
+import TrackList from "@/components/TrackList";
 
 const result: any = {
   album: {
@@ -583,10 +584,10 @@ const Album = () => {
           </div>
           <div className="buttons">
             <Button shape={"square"}>
-              <SvgIcon iconName="bofang" />播放
+              <SvgIcon iconName="play" style={{ paddingRight: "6px" }} />播放
             </Button>
             <Button shape={"square"}>
-              <SvgIcon iconName="like"></SvgIcon>
+              <SvgIcon iconName="heart"></SvgIcon>
             </Button>
             <Button shape={"square"}>
               ···
@@ -594,6 +595,8 @@ const Album = () => {
           </div>
         </div>
       </div>
+      <TrackList id={albumData.id} tracks={albumData.tracks} type={"ablum"} />
+
     </div>
   );
 };

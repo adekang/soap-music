@@ -17,10 +17,10 @@ const TopNav: React.FC = () => {
     <nav className="top-nav">
       <div className="navigation-buttons">
         <button onClick={() => {go("back");}}>
-          <SvgIcon className="svg-icon" iconName="arrow-left-bold" />
+          <SvgIcon className="svg-icon" iconName="arrow-left" />
         </button>
         <button onClick={() => {go("front");}}>
-          <SvgIcon className="svg-icon" iconName="arrow-right-bold" />
+          <SvgIcon className="svg-icon" iconName="arrow-right" />
         </button>
       </div>
       <ul className="center-part">
