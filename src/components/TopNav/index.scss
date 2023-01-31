@@ -10,7 +10,7 @@
   padding-left: 10vw;
   padding-right: 10vw;
   height: 64px;
-  @include fontStyle($font-size-m, $font-color-deep, 700);
+  @include fontStyle($font-size-l, $font-color-deep, 700);
   backdrop-filter: saturate(180%) blur(30px);
   background-color: $color-navbar-bg;
 
@@ -24,7 +24,8 @@
       border-radius: 25%;
 
       .svg-icon {
-        font-size: $font-size-m;
+        font-size: $font-size-l;
+        font-weight: 700;
       }
 
       &:hover {
@@ -61,7 +62,7 @@
       display: flex;
       align-items: center;
       height: 32px;
-      max-width: 200px;
+      max-width: 240px;
       border-radius: 8px;
       margin-right: 8px;
       background-color: $color-secondary-bg;
@@ -69,7 +70,7 @@
 
       .search-icon {
         color: #999;
-        font-size: 14px;
+        font-size: $font-size-s;
         margin: 0 4px;
       }
 

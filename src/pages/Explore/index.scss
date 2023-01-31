@@ -1,7 +1,7 @@
 .explore {
   > h1 {
     padding: 32px 0 32px 0;
-    @include fontStyle(32px, $font-color-deep, 700);
+    @include fontStyle(56px, $font-color-deep, 700);
   }
 
   .buttons {
