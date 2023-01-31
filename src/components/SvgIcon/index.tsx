@@ -1,4 +1,5 @@
 import React, { memo, useMemo } from "react";
+import "./index.scss";
 
 export type svgProps = {
   iconName: string;
@@ -19,21 +20,20 @@ const SvgIcon: React.FC<Partial<svgProps>> = ({
                                               }) => {
   const name = useMemo(() => `#icon-${iconName}`, [iconName]);
 
-  const svgStyle = {
-    width: "1em",
-    height: "1em",
-    verticalAlign: "-0.15em",
-    overflow: "hidden",
-    fill: "currentColor", // 颜色值
-    fontSize: "1.1em"
+  const svgClass = () => {
+    if (className) {
+      return "svg-icon " + className;
+    } else {
+      return "svg-icon";
+    }
   };
 
   return (
     <svg
       fontSize={fontSize}
-      style={{ ...svgStyle, fontSize, ...style }}
+      style={{ fontSize, ...style }}
       aria-hidden="true"
-      className={className}
+      className={svgClass()}
       onClick={onClick}
     >
       <use xlinkHref={name} fill={fill} />

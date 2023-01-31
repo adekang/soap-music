@@ -25,13 +25,13 @@
 
       &:hover {
         background-color: $color-primary-bg;
-        color: $theme-color;
+        color: var(--color-primary);
       }
     }
 
     .active {
       background-color: $color-primary-bg;
-      color: $theme-color;
+      color: var(--color-primary);
     }
   }
 
@@ -87,13 +87,13 @@
         &:hover {
           opacity: 1;
           background-color: $color-primary-bg;
-          color: $theme-color;
+          color: var(--color-primary);
         }
       }
     }
 
     .active {
-      color: $theme-color;
+      color: var(--color-primary);
     }
   }
 

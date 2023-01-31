@@ -84,7 +84,7 @@
         color: $border-color-desc;
 
         &:focus {
-          color: $theme-color;
+          color: var(--color-primary);
         }
       }
     }

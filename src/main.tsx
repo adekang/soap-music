@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import "./index.scss";
+import "./assets/scss/global.scss";
 import { routes } from "@/routes/routes";
 import { Provider } from "react-redux";
 import { store } from "@/store";

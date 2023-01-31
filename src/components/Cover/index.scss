@@ -35,11 +35,12 @@
         }
 
         .svg-play {
+          width: 24px;
+          height: 24px;
           position: fixed;
           top: 50%;
           left: 50%;
           transform: translate(-42%, -50%);
-          font-size: 24px;
         }
       }
     }

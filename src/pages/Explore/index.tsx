@@ -10,6 +10,7 @@ import {
   getRankListRequest,
   getRecommendList
 } from "@/services";
+import Button from "@/components/Button";
 
 const allBigCats = ["语种", "风格", "场景", "情感", "主题"];
 
@@ -17,7 +18,6 @@ const Explore = () => {
   const dispatch = useAppDispatch();
 
   const { playlists } = useAppSelector((state: RootState) => state.categories);
-
   const [showCatOption, setShowCatOption] = useState(false);
   const [activeCategory, setActiveCategory] = useState("全部");
   const [hasMore, setHasMore] = useState(false);
@@ -165,8 +165,10 @@ const Explore = () => {
       </section>
       <section className="load-more">
         {hasMore ?
-          (<button className="grey"
-                   onClick={() => {getButtonPlaylist(activeCategory);}}>加载更多...</button>) : null}
+          (
+            <Button shape={"square"} className="grey"
+                    onClick={() => {getButtonPlaylist(activeCategory);}}>加载更多...</Button>
+          ) : null}
       </section>
     </div>
   );

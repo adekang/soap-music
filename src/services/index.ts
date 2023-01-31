@@ -14,7 +14,7 @@ export const getRecommendList = (data: { limit: number }) => {
   });
 };
 
-export function getHighQualityList(data: { limit: number, before: number }) {
+export function getHighQualityList(data: { limit: number; before: number }) {
   return service({
     url: "/top/playlist/highquality",
     data
@@ -33,33 +33,57 @@ export function getHighQualityList(data: { limit: number, before: number }) {
  * @param {number=} params.offset
  * @param data
  */
-export function getNormalPlayList(data: { limit: number, cat: string, order?: string, offset: number }) {
+export function getNormalPlayList(data: {
+  limit: number;
+  cat: string;
+  order?: string;
+  offset: number;
+}) {
   return service({
     url: "/top/playlist",
     data
   });
 }
 
-export const getHotArtists = (data: { offset: number, limit: number }) => {
+export const getHotArtists = (data: { offset: number; limit: number }) => {
   return service({
     url: "/top/artists",
     data
   });
 };
 
+/**
+ * 获取专辑内容 ( 网友精选碟 )
+ * 说明 : 调用此接口 , 传入专辑 id, 可获得专辑内容
+ * - id: 专辑 id
+ * @param {number} params.id
+ * @param data
+ */
+export const getAlbumDetailRequest = (data: { id: number }) => {
+  return service({
+    url: "/album",
+    data
+  });
+};
+export const getPlaylistDetailRequest = (data: { id: number }) => {
+  return service({
+    url: "/playlist/detail",
+    data
+  });
+};
 
 export const getBannerRequest = () => {
   return service({
     url: "/banner"
   });
 };
-export const getNewAlbumRequest = (data: { area: string, limit: number }) => {
+
+export const getNewAlbumRequest = (data: { area: string; limit: number }) => {
   return service({
     url: "/album/new",
     data
   });
 };
-
 
 export const getHotSingerListRequest = (count: number) => {
   return service({
@@ -82,12 +106,6 @@ export const getSingerListRequest = (category: string, alpha: string, count: num
 export const getRankListRequest = () => {
   return service({
     url: `/toplist`
-  });
-};
-
-export const getAlbumDetailRequest = (id: number) => {
-  return service({
-    url: `/playlist/detail?id=${id}`
   });
 };
 

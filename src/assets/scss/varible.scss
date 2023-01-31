@@ -8,7 +8,6 @@ $color-secondary-bg-for-transparent: rgba(209, 209, 214, 0.28);
 $html-overflow-y: overlay;
 
 $border-color: #f0f0f0;
-$theme-color: #335eea;
 
 $font-color-light: #f1f1f1;
 $font-color-deep: #18191c;
@@ -74,15 +73,4 @@ $theme-color-shadow: "rgba(212, 68, 57, .5)";
   }
 }
 
-:root {
-  --color-body-bg: #ffffff;
-  --color-text: #000;
-  --color-primary: #335eea;
-  --color-primary-bg: #eaeffd;
-  --color-secondary: #7a7a7b;
-  --color-secondary-bg: #f5f5f7;
-  --color-navbar-bg: rgba(255, 255, 255, 0.86);
-  --color-primary-bg-for-transparent: rgba(189, 207, 255, 0.28);
-  --color-secondary-bg-for-transparent: rgba(209, 209, 214, 0.28);
-  --html-overflow-y: overlay;
-}
+

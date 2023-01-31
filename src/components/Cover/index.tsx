@@ -21,7 +21,7 @@ const Cover: FC<Props> = ({ id, picUrl, type = "cover" }) => {
 
   const shadowStyles = (picUrl: string) => {
     return {
-      backgroundImage: `url(${picUrl}?param=512y512)`,
+      backgroundImage: `url(${picUrl}?param=300y300)`,
       borderRadius: `${type == "singer" ? "50%" : null}`
     };
   };
@@ -39,11 +39,11 @@ const Cover: FC<Props> = ({ id, picUrl, type = "cover" }) => {
         {(show && showId === id) ?
           (<div className="shade">
             <button className="play-button">
-              <SvgIcon iconName="bofang" className="svg-play" />
+              <SvgIcon iconName="bofang" className="icon" />
             </button>
           </div>) : null}
         <img
-          src={`${picUrl}?param=512y512`}
+          src={`${picUrl}?param=300y300`}
           style={
             { borderRadius: `${type == "singer" ? "50%" : null}` }
           }
