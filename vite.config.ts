@@ -10,6 +10,9 @@ export default defineConfig(configEnv => {
   const { command, mode } = configEnv;
   return {
     base: "./",
+    define: {
+      isDev: command === "serve"
+    },
     resolve: {
       alias: {
         "@": resolve(__dirname, "src")

@@ -1,11 +1,6 @@
 import service from "./request";
 import { categoryMap } from "@/utils";
 
-export const checkMusic = (data: { id: number }) =>
-  service({
-    url: "/check/music",
-    data
-  });
 
 export const getPlaylistDetail = (id: number, noCache = false) => {
   const params: any = {
