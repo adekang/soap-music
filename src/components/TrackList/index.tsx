@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./index.scss";
-import SvgIcon from "@/components/SvgIcon";
+import TrackListItem from "@/components/TrackListItem";
 
 interface Props {
   id: number;
@@ -12,22 +12,9 @@ const TrackList: FC<Props> = (props) => {
   const { id, tracks, type } = props;
   return (
     <div className="TrackList">
-      <h1>TrackList</h1>
-
-      <div className="track">
-        <img src="" alt="" loading="lazy" />
-        <div className="no">
-          <button>
-            <SvgIcon iconName={"paly"} />
-            <span>1</span>
-          </button>
-        </div>
-        <div className="title-and-artist"></div>
-        <div className="album"></div>
-        <div className="actions"></div>
-        <div className="time"></div>
-        <div className="count"></div>
-      </div>
+      {tracks?.map((track, index) => {
+        return <TrackListItem track={track} key={index} />;
+      })}
     </div>
   );
 };

@@ -13,102 +13,97 @@ const result: any = {
     "songs": [],
     "paid": false,
     "onSale": false,
-    "mark": 0,
+    "mark": 8192,
     "awardTags": null,
     "companyId": 0,
-    "blurPicUrl": "https://p2.music.126.net/fjD8l-bXU-LCy9oK9zxFow==/109951168271806233.jpg",
+    "blurPicUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
     "alias": [],
     "artists": [
       {
         "img1v1Id": 18686200114669624,
         "topicPerson": 0,
-        "followed": false,
         "alias": [],
         "picId": 0,
         "musicSize": 0,
         "albumSize": 0,
         "briefDesc": "",
-        "picUrl": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
-        "img1v1Url": "https://p2.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg",
-        "trans": "",
-        "name": "金美辰",
-        "id": 12250146,
-        "img1v1Id_str": "18686200114669622"
-      },
-      {
-        "img1v1Id": 18686200114669624,
-        "topicPerson": 0,
+        "picUrl": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+        "img1v1Url": "https://p1.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg",
         "followed": false,
-        "alias": [],
-        "picId": 0,
-        "musicSize": 0,
-        "albumSize": 0,
-        "briefDesc": "",
-        "picUrl": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
-        "img1v1Url": "https://p2.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg",
         "trans": "",
-        "name": "蒙恩",
-        "id": 55260422,
+        "name": "DISH//",
+        "id": 768193,
         "img1v1Id_str": "18686200114669622"
       }
     ],
-    "copyrightId": 1416316,
-    "picId": 109951168271806240,
+    "copyrightId": 2706476,
+    "picId": 109951168198570580,
     "artist": {
-      "img1v1Id": 109951168107105300,
+      "img1v1Id": 109951165690717150,
       "topicPerson": 0,
-      "followed": false,
-      "alias": [],
-      "picId": 109951164343267780,
-      "musicSize": 18,
-      "albumSize": 14,
+      "alias": [
+        "ディッシュ"
+      ],
+      "picId": 109951165690710350,
+      "musicSize": 251,
+      "albumSize": 74,
       "briefDesc": "",
-      "picUrl": "https://p2.music.126.net/6hK7LuMxOWu9IvsdQTmujQ==/109951164343267782.jpg",
-      "img1v1Url": "https://p2.music.126.net/Rf2so6gOYOJqnN03JZ6eug==/109951168107105295.jpg",
+      "picUrl": "https://p1.music.126.net/dQwmERok4VyVwsX4YubOIw==/109951165690710346.jpg",
+      "img1v1Url": "https://p1.music.126.net/XTISDYD4YTGh7L-x_HoKqg==/109951165690717156.jpg",
+      "followed": false,
       "trans": "",
-      "name": "金美辰",
-      "id": 12250146,
-      "picId_str": "109951164343267782",
-      "img1v1Id_str": "109951168107105295"
+      "name": "DISH//",
+      "id": 768193,
+      "picId_str": "109951165690710346",
+      "img1v1Id_str": "109951165690717156"
     },
-    "publishTime": 1675094400000,
-    "company": "自在天浩",
     "briefDesc": "",
-    "picUrl": "https://p2.music.126.net/fjD8l-bXU-LCy9oK9zxFow==/109951168271806233.jpg",
-    "commentThreadId": "R_AL_3_159122784",
-    "pic": 109951168271806240,
+    "publishTime": 1675180800000,
+    "company": "索尼音乐",
+    "picUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+    "commentThreadId": "R_AL_3_157467863",
+    "pic": 109951168198570580,
+    "description": "12月迎来结成11周年，气势高涨的DISH//的第5张专辑！收录了人气电视剧主题曲3首、北村出演的广告歌曲等话题歌曲丰富的12首歌曲。\n",
     "tags": "",
-    "description": "《公子贵姓》是由王启蘅执导，金美辰、蒙恩、等主演，陈名豪特别出演的古装“砂糖”喜剧  。该剧改编自爱奇艺文学倪十一的热门人气小说《醉倒需等君来扶》，讲述了精灵古怪的唐门掌门唐不言携手冷面禁欲的玄奇山掌门李成蹊，共同踏上寻找“命定之人”的爆笑之旅，一路成长收获爱情，联手升级“打怪”的故事。\n     原声带专辑邀请了音乐人逄博制作，孟令楠监制，共收录2首专属定制歌曲。\n主题片头曲《公子你哪位》由片中男女主共同演绎，打怪路上的磕磕绊绊，继续延续到歌曲里的甜甜蜜蜜，二人再次持续给大家疯狂“撒糖”甜进心窝。\n片尾曲《庆幸遇见》由女主金美辰甜蜜献唱，结合剧情歌曲温暖又甜蜜，演唱风格俏皮又可爱，给剧情带来了更多美好的小确幸，大家一起期待起来吧！\n",
     "status": 1,
     "subType": "录音室版",
-    "name": "《公子贵姓》影视剧原声带",
-    "id": 159122784,
-    "type": "EP",
-    "size": 4,
-    "picId_str": "109951168271806233",
+    "name": "TRIANGLE",
+    "id": 157467863,
+    "type": "专辑",
+    "size": 12,
+    "picId_str": "109951168198570583",
     "info": {
       "commentThread": {
-        "id": "R_AL_3_159122784",
-        "resourceInfo": null,
+        "id": "R_AL_3_157467863",
+        "resourceInfo": {
+          "id": 157467863,
+          "userId": -1,
+          "name": "TRIANGLE",
+          "imgUrl": "http://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+          "creator": null,
+          "encodedId": null,
+          "subTitle": null,
+          "webUrl": null
+        },
         "resourceType": 3,
-        "commentCount": 0,
+        "commentCount": 7,
         "likedCount": 0,
-        "shareCount": 0,
+        "shareCount": 2,
         "hotCount": 0,
         "latestLikedUsers": null,
-        "resourceOwnerId": 0,
-        "resourceTitle": null,
-        "resourceId": 0
+        "resourceOwnerId": -1,
+        "resourceTitle": "TRIANGLE",
+        "resourceId": 157467863
       },
       "latestLikedUsers": null,
       "liked": false,
       "comments": null,
       "resourceType": 3,
-      "resourceId": 159122784,
-      "commentCount": 0,
+      "resourceId": 157467863,
+      "commentCount": 7,
       "likedCount": 0,
-      "shareCount": 0,
-      "threadId": "R_AL_3_159122784"
+      "shareCount": 2,
+      "threadId": "R_AL_3_157467863"
     }
   },
   songs: [
@@ -116,282 +111,19 @@ const result: any = {
       "rtUrls": [],
       "ar": [
         {
-          "id": 55532436,
-          "name": "程晓艺"
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
         }
       ],
       "al": {
-        "id": 159122686,
-        "name": "独立游戏 隐秘的角落 片尾曲",
-        "picUrl": "https://p2.music.126.net/sO1iiLeq7ApEiXxQSx7Z-Q==/109951168271740899.jpg",
-        "pic_str": "109951168271740899",
-        "pic": 109951168271740900
-      },
-      "st": 1,
-      "noCopyrightRcmd": null,
-      "songJumpInfo": null,
-      "rtype": 0,
-      "rurl": null,
-      "pst": 0,
-      "alia": [
-        "独立游戏《隐秘的角落》旧梦结局片尾曲"
-      ],
-      "pop": 5,
-      "rt": "",
-      "mst": 9,
-      "cp": 0,
-      "crbt": null,
-      "cf": "",
-      "dt": 142632,
-      "rtUrl": null,
-      "ftype": 0,
-      "djId": 0,
-      "no": 1,
-      "fee": 0,
-      "mv": 0,
-      "t": 0,
-      "v": 2,
-      "h": {
-        "br": 320000,
-        "fid": 0,
-        "size": 5707245,
-        "vd": -15704,
-        "sr": 48000
-      },
-      "l": {
-        "br": 128000,
-        "fid": 0,
-        "size": 2282925,
-        "vd": -11327,
-        "sr": 48000
-      },
-      "sq": null,
-      "hr": null,
-      "cd": "01",
-      "a": null,
-      "m": {
-        "br": 192000,
-        "fid": 0,
-        "size": 3424365,
-        "vd": -13096,
-        "sr": 48000
-      },
-      "name": "回声",
-      "id": 2018410083,
-      "privilege": {
-        "id": 2018410083,
-        "fee": 0,
-        "payed": 0,
-        "st": 0,
-        "pl": 320000,
-        "dl": 320000,
-        "sp": 7,
-        "cp": 1,
-        "subp": 1,
-        "cs": false,
-        "maxbr": 320000,
-        "fl": 320000,
-        "toast": false,
-        "flag": 1,
-        "preSell": false,
-        "playMaxbr": 320000,
-        "downloadMaxbr": 320000,
-        "maxBrLevel": "exhigh",
-        "playMaxBrLevel": "exhigh",
-        "downloadMaxBrLevel": "exhigh",
-        "plLevel": "exhigh",
-        "dlLevel": "exhigh",
-        "flLevel": "exhigh",
-        "rscl": null,
-        "freeTrialPrivilege": {
-          "resConsumable": false,
-          "userConsumable": false,
-          "listenType": null
-        },
-        "chargeInfoList": [
-          {
-            "rate": 128000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 192000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 320000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 999000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 1
-          }
-        ]
-      }
-    },
-    {
-      "rtUrls": [],
-      "ar": [
-        {
-          "id": 55531811,
-          "name": "褚敏"
-        }
-      ],
-      "al": {
-        "id": 159122686,
-        "name": "独立游戏 隐秘的角落 片尾曲",
-        "picUrl": "https://p2.music.126.net/sO1iiLeq7ApEiXxQSx7Z-Q==/109951168271740899.jpg",
-        "pic_str": "109951168271740899",
-        "pic": 109951168271740900
-      },
-      "st": 1,
-      "noCopyrightRcmd": null,
-      "songJumpInfo": null,
-      "rtype": 0,
-      "rurl": null,
-      "pst": 0,
-      "alia": [
-        "独立游戏《隐秘的角落》新生结局片尾曲"
-      ],
-      "pop": 5,
-      "rt": "",
-      "mst": 9,
-      "cp": 0,
-      "crbt": null,
-      "cf": "",
-      "dt": 96824,
-      "rtUrl": null,
-      "ftype": 0,
-      "djId": 0,
-      "no": 2,
-      "fee": 0,
-      "mv": 0,
-      "t": 0,
-      "v": 2,
-      "h": {
-        "br": 320000,
-        "fid": 0,
-        "size": 3875565,
-        "vd": -9913,
-        "sr": 48000
-      },
-      "l": {
-        "br": 128000,
-        "fid": 0,
-        "size": 1550253,
-        "vd": -5491,
-        "sr": 48000
-      },
-      "sq": {
-        "br": 640197,
-        "fid": 0,
-        "size": 7748327,
-        "vd": -9827,
-        "sr": 48000
-      },
-      "hr": {
-        "br": 1382785,
-        "fid": 0,
-        "size": 16735898,
-        "vd": -9726,
-        "sr": 48000
-      },
-      "cd": "01",
-      "a": null,
-      "m": {
-        "br": 192000,
-        "fid": 0,
-        "size": 2325357,
-        "vd": -7280,
-        "sr": 48000
-      },
-      "name": "寓言",
-      "id": 2018414709,
-      "privilege": {
-        "id": 2018414709,
-        "fee": 0,
-        "payed": 0,
-        "st": 0,
-        "pl": 320000,
-        "dl": 999000,
-        "sp": 7,
-        "cp": 1,
-        "subp": 1,
-        "cs": false,
-        "maxbr": 999000,
-        "fl": 320000,
-        "toast": false,
-        "flag": 1,
-        "preSell": false,
-        "playMaxbr": 999000,
-        "downloadMaxbr": 999000,
-        "maxBrLevel": "hires",
-        "playMaxBrLevel": "hires",
-        "downloadMaxBrLevel": "hires",
-        "plLevel": "exhigh",
-        "dlLevel": "hires",
-        "flLevel": "exhigh",
-        "rscl": null,
-        "freeTrialPrivilege": {
-          "resConsumable": false,
-          "userConsumable": false,
-          "listenType": null
-        },
-        "chargeInfoList": [
-          {
-            "rate": 128000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 192000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 320000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 0
-          },
-          {
-            "rate": 999000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 1
-          },
-          {
-            "rate": 1999000,
-            "chargeUrl": null,
-            "chargeMessage": null,
-            "chargeType": 1
-          }
-        ]
-      }
-    },
-    {
-      "rtUrls": [],
-      "ar": [
-        {
-          "id": 55531810,
-          "name": "Aluba Studio"
-        }
-      ],
-      "al": {
-        "id": 159122686,
-        "name": "独立游戏 隐秘的角落 片尾曲",
-        "picUrl": "https://p1.music.126.net/sO1iiLeq7ApEiXxQSx7Z-Q==/109951168271740899.jpg",
-        "pic_str": "109951168271740899",
-        "pic": 109951168271740900
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
       },
       "st": 1,
       "noCopyrightRcmd": null,
@@ -403,69 +135,69 @@ const result: any = {
       "pop": 5,
       "rt": "",
       "mst": 9,
-      "cp": 0,
+      "cp": 2706476,
       "crbt": null,
       "cf": "",
-      "dt": 138024,
+      "dt": 232960,
       "rtUrl": null,
       "ftype": 0,
       "djId": 0,
-      "no": 3,
-      "fee": 0,
+      "no": 1,
+      "fee": 8,
       "mv": 0,
       "t": 0,
-      "v": 1,
+      "v": 3,
       "h": {
-        "br": 320003,
+        "br": 320000,
         "fid": 0,
-        "size": 5521965,
-        "vd": 115717,
-        "sr": 48000
+        "size": 9318444,
+        "vd": -72116,
+        "sr": 44100
       },
       "l": {
-        "br": 128003,
+        "br": 128000,
         "fid": 0,
-        "size": 2208813,
-        "vd": 120071,
-        "sr": 48000
+        "size": 3727404,
+        "vd": -68448,
+        "sr": 44100
       },
       "sq": null,
       "hr": null,
       "cd": "01",
       "a": null,
       "m": {
-        "br": 192003,
+        "br": 192000,
         "fid": 0,
-        "size": 3313197,
-        "vd": 118334,
-        "sr": 48000
+        "size": 5591084,
+        "vd": -69762,
+        "sr": 44100
       },
-      "name": "独立游戏 隐秘的角落 遗憾结局片尾曲",
-      "id": 2018410084,
+      "name": "No.1",
+      "id": 2010946330,
       "privilege": {
-        "id": 2018410084,
-        "fee": 0,
+        "id": 2010946330,
+        "fee": 8,
         "payed": 0,
         "st": 0,
-        "pl": 320000,
-        "dl": 320000,
+        "pl": 128000,
+        "dl": 0,
         "sp": 7,
         "cp": 1,
         "subp": 1,
         "cs": false,
         "maxbr": 320000,
-        "fl": 320000,
+        "fl": 128000,
         "toast": false,
-        "flag": 1,
+        "flag": 4,
         "preSell": false,
         "playMaxbr": 320000,
         "downloadMaxbr": 320000,
         "maxBrLevel": "exhigh",
         "playMaxBrLevel": "exhigh",
         "downloadMaxBrLevel": "exhigh",
-        "plLevel": "exhigh",
-        "dlLevel": "exhigh",
-        "flLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
         "rscl": null,
         "freeTrialPrivilege": {
           "resConsumable": false,
@@ -483,13 +215,1394 @@ const result: any = {
             "rate": 192000,
             "chargeUrl": null,
             "chargeMessage": null,
-            "chargeType": 0
+            "chargeType": 1
           },
           {
             "rate": 320000,
             "chargeUrl": null,
             "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [
+        "日剧《乘上独角兽》主题曲"
+      ],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 236225,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 2,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9450101,
+        "vd": -58343,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3780066,
+        "vd": -54342,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5670078,
+        "vd": -55908,
+        "sr": 44100
+      },
+      "name": "しわくちゃな雲を抱いて",
+      "id": 2010946799,
+      "privilege": {
+        "id": 2010946799,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
             "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 235023,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 3,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9402036,
+        "vd": -61648,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3760840,
+        "vd": -57522,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5641239,
+        "vd": -59153,
+        "sr": 44100
+      },
+      "name": "スパゲッティ",
+      "id": 2010946331,
+      "privilege": {
+        "id": 2010946331,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 238759,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 4,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9551456,
+        "vd": -64605,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3820608,
+        "vd": -60774,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5730891,
+        "vd": -62245,
+        "sr": 44100
+      },
+      "name": "万々歳",
+      "id": 2010946332,
+      "privilege": {
+        "id": 2010946332,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 261773,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 5,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 10472011,
+        "vd": -71949,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4188831,
+        "vd": -67771,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 6283224,
+        "vd": -69389,
+        "sr": 44100
+      },
+      "name": "マチネソワレ",
+      "id": 2010946333,
+      "privilege": {
+        "id": 2010946333,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 207830,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 6,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 8314297,
+        "vd": -61601,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3325745,
+        "vd": -57413,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 4988595,
+        "vd": -59094,
+        "sr": 44100
+      },
+      "name": "Brand new day",
+      "id": 2010946800,
+      "privilege": {
+        "id": 2010946800,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 228493,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 7,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9140811,
+        "vd": -47321,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3656351,
+        "vd": -43348,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5484504,
+        "vd": -44894,
+        "sr": 44100
+      },
+      "name": "Replay",
+      "id": 2010946801,
+      "privilege": {
+        "id": 2010946801,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [
+        "日剧《旅行护士》主题曲"
+      ],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 261590,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 8,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 10463652,
+        "vd": -61280,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4185487,
+        "vd": -57079,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 6278209,
+        "vd": -58738,
+        "sr": 44100
+      },
+      "name": "五明後日",
+      "id": 2010946802,
+      "privilege": {
+        "id": 2010946802,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p2.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 181498,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 9,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 7259995,
+        "vd": -72275,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 2904024,
+        "vd": -68181,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 4356014,
+        "vd": -69772,
+        "sr": 44100
+      },
+      "name": "ブラックコーヒー",
+      "id": 2010946334,
+      "privilege": {
+        "id": 2010946334,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 152267,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 10,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 6090754,
+        "vd": -77070,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 2436328,
+        "vd": -73515,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 3654470,
+        "vd": -74843,
+        "sr": 44100
+      },
+      "name": "FLY",
+      "id": 2010946335,
+      "privilege": {
+        "id": 2010946335,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [
+        "日剧《二月的胜者-绝对合格的教室-》主题曲"
+      ],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 232333,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 11,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9293366,
+        "vd": -64364,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3717373,
+        "vd": -60226,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5576037,
+        "vd": -61813,
+        "sr": 44100
+      },
+      "name": "沈丁花",
+      "id": 2010946336,
+      "privilege": {
+        "id": 2010946336,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 768193,
+          "name": "DISH//",
+          "alia": [
+            "ディッシュ"
+          ]
+        }
+      ],
+      "al": {
+        "id": 157467863,
+        "name": "TRIANGLE",
+        "picUrl": "https://p1.music.126.net/2fP-eI6jdfx3vdT3d3QOBA==/109951168198570583.jpg",
+        "pic_str": "109951168198570583",
+        "pic": 109951168198570580
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 5,
+      "rt": "",
+      "mst": 9,
+      "cp": 2706476,
+      "crbt": null,
+      "cf": "",
+      "dt": 215771,
+      "rtUrl": null,
+      "ftype": 0,
+      "djId": 0,
+      "no": 12,
+      "fee": 8,
+      "mv": 0,
+      "t": 0,
+      "v": 3,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 8630901,
+        "vd": -61880,
+        "sr": 44100
+      },
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3452386,
+        "vd": -57726,
+        "sr": 44100
+      },
+      "sq": null,
+      "hr": null,
+      "cd": "01",
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5178558,
+        "vd": -59495,
+        "sr": 44100
+      },
+      "name": "真っ白",
+      "id": 2010946337,
+      "privilege": {
+        "id": 2010946337,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
           },
           {
             "rate": 999000,
@@ -505,8 +1618,6 @@ const result: any = {
 
 const Album = () => {
   const params = useParams<{ id: string }>();
-  console.log(params);
-
   const [albumData, setAlbumData] = useState<any>({});
   const [songs, setSongs] = useState({});
 
@@ -517,15 +1628,24 @@ const Album = () => {
         // @ts-ignore
         let res: any = {};
         res = {
-          id: result.album.id | 159122686,
-          name: result.album.name,
-          picUrl: result.album.picUrl,
           type: result.album.type,
-          description: result.album.description,
-          subtitle: result.album?.subtitle
+          id: result.album.id,
+          album: {
+            name: result.album.name,
+            picUrl: result.album.picUrl,
+            description: result.album.description,
+            subtitle: result.album.subtitle,
+            publishTime: result.album.publishTime
+          },
+          artist: {
+            id: result.album.artist.id,
+            name: result.album.artist.name
+          },
+          tracks: result.songs
         };
-        console.log(res);
+        console.log("res::", res);
         setAlbumData(res);
+
         setSongs(result.songs);
       })
       .catch((err: any) => {
@@ -534,29 +1654,9 @@ const Album = () => {
   };
 
   useEffect(() => {
-    // getAlbumDetail();
-    let res: any = {};
-    res = {
-      type: result.album.type,
-      id: result.album.id,
-      album: {
-        name: result.album.name,
-        picUrl: result.album.picUrl,
-        description: result.album.description,
-        subtitle: result.album.subtitle,
-        publishTime: result.album.publishTime
-      },
-      artist: {
-        id: result.album.artist.id,
-        name: result.album.artist.name
-      },
-      tracks: result.songs
-    };
-    console.log("res::", res);
-    setAlbumData(res);
+    getAlbumDetail();
 
   }, []);
-  console.log(albumData);
 
   const albumTime = () => {
     let time = 0;
