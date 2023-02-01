@@ -1,13 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counterSlice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import counterReducer from "@/store/counterSlice";
 import categoriesReducer from "@/store/categoriesSlice";
+import PlayReducer from "@/store/playSlice";
 
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    categories: categoriesReducer
+    categories: categoriesReducer,
+    play: PlayReducer
   },
   devTools: true
 });

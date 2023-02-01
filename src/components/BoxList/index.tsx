@@ -14,18 +14,29 @@ export interface DataProps {
 }
 
 export interface Props {
+  type: "artist" | "playlist" | "album";
   data: DataProps[];
 }
 
-const BoxList: FC<Props> = ({ data }) => {
+const BoxList: FC<Props> = ({ data, type }) => {
   const navigate = useNavigate();
+
+  const goTo = (id: number) => {
+    if (type === "album") {
+      return `/album/${id}`;
+    } else if (type === "artist") {
+      return `/artist/${id}`;
+    } else {
+      return `/playlist/${id}`;
+    }
+  };
 
   return (
     <div className="box-container">
       {data != undefined
         ? data.map(item => {
           return (
-            <div className="box-item" key={item.id} onClick={() => navigate(`/album/${item.id}`)}>
+            <div className="box-item" key={item.id} onClick={() => navigate(goTo(item.id))}>
               <Cover id={item.id} picUrl={item.picUrl} type={item.type} />
               <div className="text">
                 <div className="title">{item.name}</div>

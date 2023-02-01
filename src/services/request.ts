@@ -4,7 +4,8 @@ const isPrd = environmentVariable() === "dev";
 
 // http://121.41.42.16:3000
 // http://www.codeman.ink/api
-export const baseUrl = "https://music.qier222.com/api";
+// https://api.trtst.com/
+export const baseUrl = "https://api.trtst.com";
 
 import createRequest from "./createRequest.js";
 

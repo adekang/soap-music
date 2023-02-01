@@ -7,6 +7,17 @@ export const checkMusic = (data: { id: number }) =>
     data
   });
 
+export const getPlaylistDetail = (id: number, noCache = false) => {
+  const params: any = {
+    id, s: 8
+  };
+  if (noCache) params.timestamp = new Date().getTime();
+  return service({
+    url: "/playlist/detail",
+    data: params
+  });
+};
+
 export const getRecommendList = (data: { limit: number }) => {
   return service({
     url: "/personalized",

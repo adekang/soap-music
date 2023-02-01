@@ -65,7 +65,7 @@ const Index = () => {
           <a href="#">查看全部</a>
         </span>
         </div>
-        <BoxList data={recommend} />
+        <BoxList data={recommend} type="playlist" />
       </section>
 
       <section>
@@ -75,7 +75,7 @@ const Index = () => {
           <a href="#">查看全部</a>
         </span>
         </div>
-        <BoxList data={hotArtists} />
+        <BoxList data={hotArtists} type="artist" />
       </section>
       <section>
         <div className="index-title">
@@ -84,7 +84,7 @@ const Index = () => {
           <a href="#">查看全部</a>
         </span>
         </div>
-        <BoxList data={newestAlbum} />
+        <BoxList data={newestAlbum} type="album" />
       </section>
       <section>
         <div className="index-title">
@@ -93,7 +93,7 @@ const Index = () => {
           <a href="#">查看全部</a>
         </span>
         </div>
-        <BoxList data={rankList} />
+        <BoxList data={rankList} type="playlist" />
       </section>
     </div>
   );

@@ -161,7 +161,7 @@ const Explore = () => {
         }
       </section>
       <section className="explore-playlists">
-        <BoxList data={playlists} />
+        <BoxList data={playlists} type="playlist" />
       </section>
       <section className="load-more">
         {hasMore ?
