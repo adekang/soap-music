@@ -3,13 +3,15 @@ import { resolve } from "path";
 import react from "@vitejs/plugin-react";
 import createVitePlugins from "./config";
 import cssOption from "./config/style";
+import { VITE_APP_BASE } from "./config/config";
 // https://vitejs.dev/config/
 
 export default defineConfig(configEnv => {
   console.log(`config::`, configEnv);
   const { command, mode } = configEnv;
+  const isDev = command === "serve";
   return {
-    base: "./",
+    base: isDev ? "./" : VITE_APP_BASE,
     define: {
       isDev: command === "serve"
     },
