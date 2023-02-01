@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Layout from "@/components/Layout";
 import NotFound from "@/pages/NotFound";
 import Library from "@/pages/Library";
@@ -9,7 +9,7 @@ import Album from "@/pages/Album";
 import Artist from "@/pages/Artist";
 import Playlist from "@/pages/Playlist";
 
-export const routes = createBrowserRouter([
+export const routes = createHashRouter([
   {
     path: "/",
     element: <Layout />,
