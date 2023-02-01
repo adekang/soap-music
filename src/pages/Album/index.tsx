@@ -11,7 +11,6 @@ import TrackList from "@/components/TrackList";
 const Album = () => {
   const params = useParams<{ id: string }>();
   const [albumData, setAlbumData] = useState<any>({});
-  const [songs, setSongs] = useState({});
 
   const getAlbumDetail = () => {
     getAlbumDetailRequest({ id: Number(params.id) })
@@ -37,8 +36,6 @@ const Album = () => {
         };
         console.log("res::", res);
         setAlbumData(res);
-
-        setSongs(result.songs);
       })
       .catch((err: any) => {
         return err;
