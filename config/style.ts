@@ -15,7 +15,7 @@ const cssOption: CSSOptions = {
     },
     scss: {
       charset: false,
-      additionalData: "@import \"./src/assets/scss/varible.scss\";"
+      additionalData: '@import "./src/assets/scss/variable.scss";'
     }
   }
 };
