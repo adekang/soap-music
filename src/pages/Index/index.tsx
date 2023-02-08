@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./index.scss";
+import styles from "./index.module.scss";
 import BoxList, { DataProps } from "@/components/BoxList";
 import {
   getHotArtists,
@@ -57,9 +57,9 @@ const Index = () => {
 
 
   return (
-    <div className="index">
+    <div className={styles.index}>
       <section>
-        <div className="index-title">
+        <div className={styles.index_title}>
           <h1>推荐歌单</h1>
           <span>
           <a href="#">查看全部</a>
@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       <section>
-        <div className="index-title">
+        <div className={styles.index_title}>
           <h1>推荐艺人</h1>
           <span>
           <a href="#">查看全部</a>
@@ -78,7 +78,7 @@ const Index = () => {
         <BoxList data={hotArtists} type="artist" />
       </section>
       <section>
-        <div className="index-title">
+        <div className={styles.index_title}>
           <h1>新专速递</h1>
           <span>
           <a href="#">查看全部</a>
@@ -87,7 +87,7 @@ const Index = () => {
         <BoxList data={newestAlbum} type="album" />
       </section>
       <section>
-        <div className="index-title">
+        <div className={styles.index_title}>
           <h1>排行榜</h1>
           <span>
           <a href="#">查看全部</a>
