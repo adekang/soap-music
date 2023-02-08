@@ -9,11 +9,12 @@ import { VITE_APP_BASE } from "./config/config";
 export default defineConfig(configEnv => {
   console.log(`config::`, configEnv);
   const { command, mode } = configEnv;
-  const isDev = command === "serve";
+  const isDev = mode === "development";
+
   return {
     base: isDev ? "./" : VITE_APP_BASE,
     define: {
-      isDev: command === "serve"
+      isDev: mode === "development"
     },
     resolve: {
       alias: {
