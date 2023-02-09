@@ -36,7 +36,7 @@ const Library = () => {
 
       <Button onClick={ok} shape="square">
         <span>你好</span>
-        <SvgIcon className="icon" iconName="github" />
+        <SvgIcon className="svg-icon" iconName="github" />
       </Button>
     </div>
   );
