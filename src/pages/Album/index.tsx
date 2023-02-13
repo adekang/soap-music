@@ -16,10 +16,7 @@ const Album = () => {
     const getAlbumDetail = () => {
       getAlbumDetailRequest({ id: Number(params.id) })
         .then((result: any) => {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
-          let res: any = {};
-          res = {
+          const res = {
             type: result.album.type,
             id: result.album.id,
             album: {
