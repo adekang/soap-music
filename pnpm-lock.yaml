@@ -54,9 +54,6 @@ devDependencies:
   '@vitejs/plugin-react':
     specifier: ^3.0.0
     version: 3.0.0(vite@4.3.0)
-  add:
-    specifier: ^2.0.6
-    version: 2.0.6
   autoprefixer:
     specifier: ^10.4.13
     version: 10.4.13
@@ -1429,10 +1426,6 @@ packages:
     resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
-
-  /add@2.0.6:
-    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
     dev: true
 
   /aggregate-error@3.1.0:
