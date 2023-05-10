@@ -1,40 +1,41 @@
-import React, { FC } from "react";
-import "./index.scss";
+import type { FC } from 'react'
+import React from 'react'
+import './index.scss'
 
 interface ButtonProps {
-  shape: "square" | "circle";
-  children: React.ReactNode;
-  horizontalPadding?: number;
-  backgroundColor?: string;
-  textColor?: string;
-  onClick?: () => void;
-  className?: string;
+  shape: 'square' | 'circle'
+  children: React.ReactNode
+  horizontalPadding?: number
+  backgroundColor?: string
+  textColor?: string
+  onClick?: () => void
+  className?: string
 }
 
-const Button: FC<ButtonProps> = props => {
+const Button: FC<ButtonProps> = (props) => {
   const {
     children,
-    shape = "square",
+    shape = 'square',
     horizontalPadding = 16,
-    backgroundColor = "",
-    textColor = "",
+    backgroundColor = '',
+    textColor = '',
     className,
-    onClick
-  } = props;
+    onClick,
+  } = props
 
   const buttonStyles = () => {
     const styles: React.CSSProperties = {
       padding: `${8}px ${horizontalPadding}px`,
-      borderRadius: `${shape === "circle" ? "50%" : "8px"}`,
-      width: shape === "circle" ? "38px" : "auto"
-    };
-    if (backgroundColor !== "") {
-      styles.backgroundColor = backgroundColor;
+      borderRadius: `${shape === 'circle' ? '50%' : '8px'}`,
+      width: shape === 'circle' ? '38px' : 'auto',
     }
-    if (textColor !== "") styles.color = textColor;
+    if (backgroundColor !== '')
+      styles.backgroundColor = backgroundColor
 
-    return styles;
-  };
+    if (textColor !== '') styles.color = textColor
+
+    return styles
+  }
 
   return (
     <div className="Button">
@@ -42,7 +43,7 @@ const Button: FC<ButtonProps> = props => {
         {children}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

@@ -1,6 +1,6 @@
-import React from "react";
-import "./index.scss";
-import SvgIcon from "@/components/SvgIcon";
+import React from 'react'
+import './index.scss'
+import SvgIcon from '@/components/SvgIcon'
 
 const MinPlayer = () => {
   return (
@@ -23,7 +23,7 @@ const MinPlayer = () => {
         <SvgIcon iconName="shuffle" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MinPlayer;
+export default MinPlayer

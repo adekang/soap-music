@@ -1,58 +1,59 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { getBannerRequest } from "@/services";
-import { RootState } from "@/store/index";
+import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
+import { getBannerRequest } from '@/services'
+import type { RootState } from '@/store/index'
 
 export interface CounterState {
-  value: number;
-  age: number;
-  name: string[];
-  loading: boolean;
+  value: number
+  age: number
+  name: string[]
+  loading: boolean
 }
 
 const initialState: CounterState = {
   value: 0,
   age: 18,
   name: [],
-  loading: true
-};
+  loading: true,
+}
 
 export const counterSlice = createSlice({
-  name: "counter",
+  name: 'counter',
   initialState,
   reducers: {
-    increment: state => {
-      state.value += 1;
+    increment: (state) => {
+      state.value += 1
     },
-    decrement: state => {
-      state.value -= 1;
+    decrement: (state) => {
+      state.value -= 1
     },
     incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
+      state.value += action.payload
     },
     updateLoading: (state, action: PayloadAction<boolean>) => {
-      state.loading = action.payload;
+      state.loading = action.payload
     },
 
     updateAge: (state, action: PayloadAction<number>) => {
-      state.age = action.payload;
+      state.age = action.payload
     },
     updateName: (state, action: PayloadAction<never[]>) => {
-      state.name = action.payload;
-    }
-  }
-});
+      state.name = action.payload
+    },
+  },
+})
 
 export const fetchName = () => async (dispatch: any) => {
-  const { banners } = await getBannerRequest();
-  dispatch(updateName(banners));
-  dispatch(updateLoading(false));
-  return banners;
-};
+  const { banners } = await getBannerRequest()
+  dispatch(updateName(banners))
+  dispatch(updateLoading(false))
+  return banners
+}
 
-export const selectCount = (state: RootState) => state.counter.value;
+export const selectCount = (state: RootState) => state.counter.value
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, updateLoading, incrementByAmount, updateAge, updateName } =
-  counterSlice.actions;
+export const { increment, decrement, updateLoading, incrementByAmount, updateAge, updateName }
+  = counterSlice.actions
 
-export default counterSlice.reducer;
+export default counterSlice.reducer

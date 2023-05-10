@@ -1,2 +1,2 @@
-// @ts-ignore
-let isDev: boolean;
+// @ts-expect-error
+let isDev: boolean

@@ -1,54 +1,54 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { playlistCategories } from "@/utils";
+import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
+import { playlistCategories } from '@/utils'
 
 export interface Category {
-  name: string,
-  enable: boolean,
+  name: string
+  enable: boolean
   bigCat: string
 }
 
 export interface Categories {
-  enabledPlaylistCategories: Category[];
-  playlists: any;
+  enabledPlaylistCategories: Category[]
+  playlists: any
 }
 
 const initialState: Categories = {
   enabledPlaylistCategories: playlistCategories.slice(0, 9),
-  playlists: []
-};
+  playlists: [],
+}
 
 export const categoriesSlice = createSlice({
-  name: "categories",
+  name: 'categories',
   initialState,
   reducers: {
     changeCategories: (state, action: PayloadAction<Category[]>) => {
-      state.enabledPlaylistCategories = action.payload;
+      state.enabledPlaylistCategories = action.payload
     },
     changePlaylists: (state, action: PayloadAction<any[]>) => {
-      state.playlists = action.payload;
-    }
-    , initPlaylists: (state) => {
-      state.playlists = [];
-    }
-  }
-});
-
+      state.playlists = action.payload
+    },
+    initPlaylists: (state) => {
+      state.playlists = []
+    },
+  },
+})
 
 export const addDataToCategory = (data: Category) => (dispatch: any, getState: any) => {
-  const oldCategories = getState().categories.enabledPlaylistCategories;
-  const index = oldCategories.findIndex((c: Category) => c.name === data.name);
-  if (index != -1) {
-    const res = oldCategories.filter((c: Category) => c.name != data.name);
-    dispatch(changeCategories(res));
-  } else {
-    const res = [...oldCategories, data];
-    dispatch(changeCategories(res));
+  const oldCategories = getState().categories.enabledPlaylistCategories
+  const index = oldCategories.findIndex((c: Category) => c.name === data.name)
+  if (index !== -1) {
+    const res = oldCategories.filter((c: Category) => c.name !== data.name)
+    dispatch(changeCategories(res))
   }
-};
-
+  else {
+    const res = [...oldCategories, data]
+    dispatch(changeCategories(res))
+  }
+}
 
 // Action creators are generated for each case reducer function
-export const { changeCategories, changePlaylists, initPlaylists } =
-  categoriesSlice.actions;
+export const { changeCategories, changePlaylists, initPlaylists }
+  = categoriesSlice.actions
 
-export default categoriesSlice.reducer;
+export default categoriesSlice.reducer

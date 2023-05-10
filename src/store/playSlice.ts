@@ -1,35 +1,34 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 export interface Play {
-  playing: boolean;
+  playing: boolean
   currentTrack: {
-    id: number;
-  };
+    id: number
+  }
 }
 
 const initialState: Play = {
   playing: false,
   currentTrack: {
-    id: 0
-  }
-};
-
+    id: 0,
+  },
+}
 
 export const PlaySlice = createSlice({
-  name: "play",
+  name: 'play',
   initialState,
   reducers: {
     changePlaying: (state, action: PayloadAction<boolean>) => {
-      state.playing = action.payload;
+      state.playing = action.payload
     },
     changeCurrentTrack: (state, action: PayloadAction<any>) => {
-      state.currentTrack = action.payload;
-    }
-  }
-});
+      state.currentTrack = action.payload
+    },
+  },
+})
 
+export const { changePlaying, changeCurrentTrack }
+  = PlaySlice.actions
 
-export const { changePlaying, changeCurrentTrack } =
-  PlaySlice.actions;
-
-export default PlaySlice.reducer;
+export default PlaySlice.reducer

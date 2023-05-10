@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from "react";
-import "./index.scss";
-import { useParams } from "react-router-dom";
-import SvgIcon from "@/components/SvgIcon";
-import Button from "@/components/Button";
-import Cover from "@/components/Cover";
-import { getPlaylistDetail } from "@/services";
-
+import React, { useEffect, useState } from 'react'
+import './index.scss'
+import { useParams } from 'react-router-dom'
+import SvgIcon from '@/components/SvgIcon'
+import Button from '@/components/Button'
+import Cover from '@/components/Cover'
+import { getPlaylistDetail } from '@/services'
 
 const Playlist = () => {
-  const params = useParams<{ id: string }>();
-  const [playlist, setPlaylist] = useState<any>();
+  const params = useParams<{ id: string }>()
+  const [playlist, setPlaylist] = useState<any>()
 
   useEffect(() => {
     getPlaylistDetail(Number(params.id)).then((res: any) => {
-      setPlaylist(res.playlist);
-    });
-
-
-  }, []);
-  console.log("Playlist::", params);
+      setPlaylist(res.playlist)
+    })
+  }, [])
+  console.log('Playlist::', params)
   return (
     <div className="playlist">
       <div className="playlist-info">
@@ -55,7 +52,6 @@ const Playlist = () => {
       </div>
     </div>
   )
-    ;
-};
+}
 
-export default Playlist;
+export default Playlist

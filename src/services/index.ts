@@ -1,30 +1,29 @@
-import service from "./request";
-import { categoryMap } from "@/utils";
-
+import service from './request'
+import { categoryMap } from '@/utils'
 
 export const getPlaylistDetail = (id: number, noCache = false) => {
   const params: any = {
-    id, s: 8
-  };
-  if (noCache) params.timestamp = new Date().getTime();
+    id, s: 8,
+  }
+  if (noCache) params.timestamp = new Date().getTime()
   return service({
-    url: "/playlist/detail",
-    data: params
-  });
-};
+    url: '/playlist/detail',
+    data: params,
+  })
+}
 
 export const getRecommendList = (data: { limit: number }) => {
   return service({
-    url: "/personalized",
-    data
-  });
-};
+    url: '/personalized',
+    data,
+  })
+}
 
 export function getHighQualityList(data: { limit: number; before: number }) {
   return service({
-    url: "/top/playlist/highquality",
-    data
-  });
+    url: '/top/playlist/highquality',
+    data,
+  })
 }
 
 /**
@@ -40,23 +39,23 @@ export function getHighQualityList(data: { limit: number; before: number }) {
  * @param data
  */
 export function getNormalPlayList(data: {
-  limit: number;
-  cat: string;
-  order?: string;
-  offset: number;
+  limit: number
+  cat: string
+  order?: string
+  offset: number
 }) {
   return service({
-    url: "/top/playlist",
-    data
-  });
+    url: '/top/playlist',
+    data,
+  })
 }
 
 export const getHotArtists = (data: { offset: number; limit: number }) => {
   return service({
-    url: "/top/artists",
-    data
-  });
-};
+    url: '/top/artists',
+    data,
+  })
+}
 
 /**
  * 获取专辑内容 ( 网友精选碟 )
@@ -67,94 +66,94 @@ export const getHotArtists = (data: { offset: number; limit: number }) => {
  */
 export const getAlbumDetailRequest = (data: { id: number }) => {
   return service({
-    url: "/album",
-    data
-  });
-};
+    url: '/album',
+    data,
+  })
+}
 export const getPlaylistDetailRequest = (data: { id: number }) => {
   return service({
-    url: "/playlist/detail",
-    data
-  });
-};
+    url: '/playlist/detail',
+    data,
+  })
+}
 
 export const getBannerRequest = () => {
   return service({
-    url: "/banner"
-  });
-};
+    url: '/banner',
+  })
+}
 
 export const getNewAlbumRequest = (data: { area: string; limit: number }) => {
   return service({
-    url: "/album/new",
-    data
-  });
-};
+    url: '/album/new',
+    data,
+  })
+}
 
 export const getHotSingerListRequest = (count: number) => {
   return service({
-    url: `/top/artists?offset=${count}`
-  });
-};
+    url: `/top/artists?offset=${count}`,
+  })
+}
 
 export const getSingerListRequest = (category: string, alpha: string, count: number) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+  // @ts-expect-error
   // const { type, area } = !!category ? categoryMap.get(category) : {};
-  const { type, area } = category ? categoryMap.get(category) : {};
+  const { type, area } = category ? categoryMap.get(category) : {}
   return service({
     url: `/artist/list?${
-      type && area ? `type=${type}&area=${area}` : ""
-    }&initial=${alpha.toLowerCase()}&offset=${count}`
-  });
-};
+      type && area ? `type=${type}&area=${area}` : ''
+    }&initial=${alpha.toLowerCase()}&offset=${count}`,
+  })
+}
 
 export const getRankListRequest = () => {
   return service({
-    url: `/toplist`
-  });
-};
+    url: '/toplist',
+  })
+}
 
 export const getSingerInfoRequest = (id: string | undefined) => {
   return service({
-    url: `/artists?id=${id}`
-  });
-};
-//拼接出歌曲的url链接
+    url: `/artists?id=${id}`,
+  })
+}
+// 拼接出歌曲的url链接
 // export const getSongUrl = (id: number) => {
 //   return `https://music.163.com/song/media/outer/url?id=${id}.mp3`;
 // };
 
-//拼接出歌曲的url链接
+// 拼接出歌曲的url链接
 export const getSongUrl = (id: number) => {
   return service({
-    url: `/song/url?id=${id}`
-  });
-};
+    url: `/song/url?id=${id}`,
+  })
+}
 
 export const getLyricRequest = (id: number) => {
   return service({
-    url: `/lyric?id=${id}`
-  });
-};
+    url: `/lyric?id=${id}`,
+  })
+}
 
 export const getHotKeyWordsRequest = () => {
   return service({
-    url: `/search/hot`
-  });
-};
+    url: '/search/hot',
+  })
+}
 
 export const getSuggestListRequest = (query: string) => {
   return service({
-    url: `/search/suggest?keywords=${query}`
-  });
-};
+    url: `/search/suggest?keywords=${query}`,
+  })
+}
 
 export const getResultSongsListRequest = (query: string) => {
   return service({
-    url: `/search?keywords=${query}`
-  });
-};
+    url: `/search?keywords=${query}`,
+  })
+}
 
 /**
  * 获取歌曲详情
@@ -166,35 +165,35 @@ export const getResultSongsListRequest = (query: string) => {
 
 export const getSongDetailRequest = (ids: number) => {
   return service({
-    url: `/song/detail?ids=${ids}`
-  });
-};
+    url: `/song/detail?ids=${ids}`,
+  })
+}
 
 export const phoneLogin = (data: { phone: number; md5_password: string }) => {
   return service({
-    url: "/login/cellphone",
-    method: "post",
+    url: '/login/cellphone',
+    method: 'post',
     data: {
       timestamp: new Date().getTime(),
-      ...data
-    }
-  });
-};
+      ...data,
+    },
+  })
+}
 
 export const checkLogin = (data: { cookie: string | undefined }) => {
   return service({
-    url: "/login/status",
-    method: "post",
+    url: '/login/status',
+    method: 'post',
     data: {
       timestamp: new Date().getTime(),
-      ...data
-    }
-  });
-};
+      ...data,
+    },
+  })
+}
 
 export const logout = () => {
   return service({
-    url: "/logout",
-    method: "post"
-  });
-};
+    url: '/logout',
+    method: 'post',
+  })
+}
